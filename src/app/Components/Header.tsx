@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function Header() {
     return (
-      <section className="h-32 w-screen flex justify-between items-center px-8">
+      <section className="h-32 pt-10 w-screen flex justify-between items-center px-8">
         <div className="pl-9">
           <Image src="/next.svg" width="165" height="79" alt={"Logo"}></Image>
           </div>
