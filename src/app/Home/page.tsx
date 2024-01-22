@@ -8,9 +8,8 @@ export default function Home() {
     <main className="flex min-h-screen flex-col items-center overflow-x-hidden">
       <div>
         <Header />
-        <div>
           <section>
-            <div className='relative w-screen'>
+            <div className='relative w-screen mb-4'>
               <div className="mx-24 mt-10 flex flex-col">
                 <div className='ml-12'>
                   <div className='flex w-full mb-3 items-center justify-start '>
@@ -42,7 +41,14 @@ export default function Home() {
             </div>
           </section>
 
-        </div>
+          <section>
+            <div className='h-630 bg-tertiary'>
+              <div className='py-24 px-72 flex flex-col justify-center items-center h-full font-normal w-screen text-center'>
+                <span className=' font-serif text-3xl mb-4'>“Se eu vi mais longe, foi porque estava sobre os ombros de gigantes”</span>
+                <span className='font-serif'>Isaac Newton</span>
+              </div>
+            </div>
+          </section>
       </div>
 
     </main>

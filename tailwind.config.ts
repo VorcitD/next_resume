@@ -13,6 +13,9 @@ const config: Config = {
       'sans':['Quicksand', 'sans-serif']
     },
     extend: {
+      height:{
+        '630':'630px'
+      },
       colors:{
         primary:'#232323',
         secondary:'#E86962',
