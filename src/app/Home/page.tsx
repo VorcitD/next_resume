@@ -1,6 +1,9 @@
+"use client"
+
 import Image from "next/image";
 import Header from "../Components/Header";
 import SocialMediaMenu from "../Components/SocialMediaMenu";
+import Card from "../Components/Card";
 import Button from "../Components/Button";
 import { FiChevronsRight } from "react-icons/fi";
 
@@ -208,7 +211,8 @@ export default function Home() {
                           Estagiário em Desenvolvimento Web Full Stack
                         </span>
                         <span className="mb-2 text-fontSecondary text-lg font-thin font-serif">
-                          Tokenlab Tecnologia da Informação LTDA - São Carlos-SP (Remoto)
+                          Tokenlab Tecnologia da Informação LTDA - São Carlos-SP
+                          (Remoto)
                         </span>
                         <span className="mb-1 text-secondary text-sm font-thin font-sans">
                           OUTUBRO 2021 - FEVEREIRO 2023
@@ -233,6 +237,139 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+        <section>
+          <div className="mb-4 flex items-center justify-center mt-9">
+            <div className="w-11/12 flex justify-around items-center">
+              <div className="px-4 py-24 flex flex-col">
+                <div>
+                  <div className="flex w-full mb-3 items-center justify-start ">
+                    <span className="border-4 h-0 border-secondary w-14 mr-4 "></span>
+                    <span className="font-light text-lg tracking-widest">
+                      MEU PORTIFOLIO
+                    </span>
+                  </div>
+                  <div className="mb-12">
+                    <span className="font-medium text-fontPrimary text-7xl font-serif">
+                      Trabalho Recente Concluído
+                    </span>
+                  </div>
+                </div>
+                <div className="flex max-w-xl max-h-full">
+                  <div className="">
+                    <div className=" mb-9">
+                      <p className="text-fontSecondary text-sans text-sm leading-8 font-light ">
+                        Graduando em Engenharia de Computação. Possuo
+                        experiência com Angular, React, Next, Spring Boot,
+                        trabalhei com AWS e estou habituado com metodologias
+                        ágeis. Atuei no time de desenvolvimento responsável pelo
+                        portal Seguros Unimed, realizando adição de novas
+                        features e novos produtos, tal qual o novo portal odonto
+                        e o odonto-lite. Também atuei no desenvolvimento do
+                        software de gestão de ativos ao qual a Home Developer é
+                        responsável. Realizei treinamentos em GraphQL, RxJS.
+                      </p>
+                    </div>
+                    <div className="max-w-60">
+                      <Button text="VER PORTIFOLIO"></Button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="">
+                <Image
+                  width={450}
+                  height={300}
+                  src={"/Victor.png"}
+                  alt={""}
+                ></Image>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div className="mb-4 flex items-center justify-center mt-9 py-28 px-5 bg-tertiary">
+            <div className="w-11/12 flex items-center">
+              <div className="flex h-full w-full justify-between items-center">
+                <Card photoAddress="/Foto1.jpg" postAddress={""}></Card>
+                <Card photoAddress="/Foto2.jpg" postAddress={""}></Card>
+              </div>
+              <div className="py-16 pl-14 pr-4 flex flex-col max-w-lg">
+                <div>
+                  <div className="flex w-full mb-3 items-center justify-start ">
+                    <span className="border-4 h-0 border-secondary w-14 mr-4 "></span>
+                    <span className="font-light text-lg tracking-widest">
+                      PUBLICAÇÕES RECENTES
+                    </span>
+                  </div>
+                  <div className="mb-12">
+                    <span className="font-medium text-fontPrimary text-7xl font-serif">
+                      Veja Meus Artigos Recentes
+                    </span>
+                  </div>
+                </div>
+                <div className="flex max-w-xl max-h-full">
+                  <div className="">
+                    <div className=" mb-9">
+                      <p className="text-fontSecondary text-sans text-sm leading-8 font-light ">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero explicabo, dolorem perspiciatis eligendi accusantium eveniet consequuntur possimus facere officia deserunt animi aperiam odio maiores, impedit dicta, neque illo rem voluptate.
+                      </p>
+                    </div>
+                    <div className="max-w-60">
+                      <Button text="VISITAR BLOG"></Button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div className="mb-4 flex items-center justify-center mt-9">
+            <div className="w-11/12 flex justify-around items-center">
+              <div className="px-4 py-24 flex flex-col">
+                <div>
+                  <div className="flex w-full mb-3 items-center justify-start ">
+                    <span className="border-4 h-0 border-secondary w-14 mr-4 "></span>
+                    <span className="font-light text-lg tracking-widest">
+                      FALE COMIGO
+                    </span>
+                  </div>
+                  <div className="mb-12">
+                    <span className="font-medium text-fontPrimary text-7xl font-serif">
+                      Vamos Conversar
+                    </span>
+                  </div>
+                </div>
+                <div className="flex max-w-xl max-h-full">
+                  <div className="">
+                    <div className=" mb-9">
+                      <p className="text-fontSecondary text-sans text-sm leading-8 font-light ">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat debitis explicabo eius inventore dignissimos deserunt dolores, fugit qui aliquam iusto perspiciatis, dolor cupiditate, labore aut pariatur laboriosam accusamus magni a.
+                      </p>
+                    </div>
+                    <div className="max-w-96">
+                      <Button text="ENTRE EM CONTATO"></Button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="">
+                <Image
+                  width={450}
+                  height={300}
+                  src={"/Victor.png"}
+                  alt={""}
+                ></Image>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+
       </div>
     </main>
   );
