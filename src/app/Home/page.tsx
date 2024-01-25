@@ -1,11 +1,15 @@
-"use client"
+"use client";
 
 import Image from "next/image";
 import Header from "../Components/Header";
 import SocialMediaMenu from "../Components/SocialMediaMenu";
 import Card from "../Components/Card";
 import Button from "../Components/Button";
-import { FiChevronsRight } from "react-icons/fi";
+import { FiChevronsRight, FiPhone, FiMail } from "react-icons/fi";
+import GrayImageText from "../Components/GrayImageText";
+import Input from "../Components/Input";
+import TextArea from "../Components/TextArea";
+import Footer from "../Components/Footer";
 
 export default function Home() {
   return (
@@ -313,7 +317,11 @@ export default function Home() {
                   <div className="">
                     <div className=" mb-9">
                       <p className="text-fontSecondary text-sans text-sm leading-8 font-light ">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero explicabo, dolorem perspiciatis eligendi accusantium eveniet consequuntur possimus facere officia deserunt animi aperiam odio maiores, impedit dicta, neque illo rem voluptate.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Libero explicabo, dolorem perspiciatis eligendi
+                        accusantium eveniet consequuntur possimus facere officia
+                        deserunt animi aperiam odio maiores, impedit dicta,
+                        neque illo rem voluptate.
                       </p>
                     </div>
                     <div className="max-w-60">
@@ -347,7 +355,11 @@ export default function Home() {
                   <div className="">
                     <div className=" mb-9">
                       <p className="text-fontSecondary text-sans text-sm leading-8 font-light ">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat debitis explicabo eius inventore dignissimos deserunt dolores, fugit qui aliquam iusto perspiciatis, dolor cupiditate, labore aut pariatur laboriosam accusamus magni a.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Repellat debitis explicabo eius inventore dignissimos
+                        deserunt dolores, fugit qui aliquam iusto perspiciatis,
+                        dolor cupiditate, labore aut pariatur laboriosam
+                        accusamus magni a.
                       </p>
                     </div>
                     <div className="max-w-96">
@@ -368,8 +380,89 @@ export default function Home() {
           </div>
         </section>
 
+        <section>
+          <div className="mb-4 flex items-center justify-center mt-9 py-28 bg-tertiary ">
+            <div className="w-11/12 flex items-start justify-center">
+              <div className="flex flex-col justify-center items-center w-1/2 ">
+                <GrayImageText
+                  photoAddress={"/Foto3.jpg"}
+                  text={"ENTRE EM CONTATO"}
+                ></GrayImageText>
+                <div className="flex w-full justify-center items-center">
+                  <form className="w-full" action="">
+                    <div className="flex items-center justify-between my-8">
+                      <div className="w-80 mr-4">
+                        <Input type={""} placeholder={"Nome"}></Input>
+                      </div>
+                      <div className="w-80">
+                        <Input type={""} placeholder={"Email"}></Input>
+                      </div>
+                    </div>
+                    <div className="w-full">
+                      <TextArea placeholder={"Mensagem"}></TextArea>
+                    </div>
+                    <Button text={"ENVIAR"}></Button>
+                  </form>
+                </div>
+              </div>
 
+              <div className="pt-12 pl-12 pr-4 flex flex-col items-start h-full max-w-1/2">
+                <div>
+                  <div className="flex w-full mb-3 items-center justify-start ">
+                    <span className="border-4 h-0 border-secondary w-14 mr-4 "></span>
+                    <span className="font-light text-lg tracking-widest">
+                      ENCOMENDE JÁ
+                    </span>
+                  </div>
+                  <div className="mb-12">
+                    <span className="font-medium text-fontPrimary text-7xl font-serif w-full">
+                      Tem um Projeto?
+                    </span>
+                  </div>
+                </div>
+                <div className="flex flex-col max-w-xl max-h-full">
+                  <div className="">
+                    <div className=" mb-9">
+                      <p className="text-fontSecondary text-sans text-sm leading-8 font-light ">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Libero explicabo, dolorem perspiciatis eligendi
+                        accusantium eveniet consequuntur possimus facere officia
+                        deserunt animi aperiam odio maiores, impedit dicta,
+                        neque illo rem voluptate.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex justify-between max-w-full">
+                    <div className="flex justify-center items-center">
+                      <FiMail className="text-secondary text-5xl mr-4"></FiMail>
+                      <div>
+                        <span className="font-thin tracking-widest text-fontPrimary font-sans text-xl mb-2">
+                          Email
+                        </span>
+                        <p className="font-thin tracking-widest text-fontSecondary font-sans text-base mb-2">
+                          vitimendoza@gmail.com
+                        </p>
+                      </div>
+                    </div>
+                    <div className="flex justify-center items-center">
+                      <FiPhone className="text-secondary text-5xl mr-4"></FiPhone>
+                      <div>
+                        <span className="font-thin tracking-widest text-fontPrimary font-sans text-xl mb-2">
+                          Telefone
+                        </span>
+                        <p className="font-thin tracking-widest text-fontSecondary font-sans text-base mb-2">
+                          (62) 9 9918-9082
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
+        <Footer></Footer>
       </div>
     </main>
   );

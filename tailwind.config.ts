@@ -13,6 +13,9 @@ const config: Config = {
       'sans':['Quicksand', 'sans-serif']
     },
     extend: {
+      brightness: {
+        35: '.35',
+      },
       height:{
         '630':'630px'
       },
