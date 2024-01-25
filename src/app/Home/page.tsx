@@ -10,15 +10,44 @@ import GrayImageText from "../Components/GrayImageText";
 import Input from "../Components/Input";
 import TextArea from "../Components/TextArea";
 import Footer from "../Components/Footer";
+import { useIsVisible } from "../Hooks/useIsVisible";
+import { useRef } from "react";
 
 export default function Home() {
+  const refIntro = useRef<HTMLDivElement | null>(null);
+  const isVisibleIntro = useIsVisible(refIntro);
+
+  const refQuote = useRef<HTMLDivElement | null>(null);
+  const isVisibleQuote = useIsVisible(refQuote);
+
+  const refAbout = useRef<HTMLDivElement | null>(null);
+  const isVisibleAbout = useIsVisible(refAbout);
+
+  const refExp = useRef<HTMLDivElement | null>(null);
+  const isVisibleExp = useIsVisible(refExp);
+
+  const refPortfolio = useRef<HTMLDivElement | null>(null);
+  const isVisiblePortfolio = useIsVisible(refPortfolio);
+
+  const refBlog = useRef<HTMLDivElement | null>(null);
+  const isVisibleBlog = useIsVisible(refBlog);
+
+  const refChat = useRef<HTMLDivElement | null>(null);
+  const isVisibleChat = useIsVisible(refChat);
+
+  const refProject = useRef<HTMLDivElement | null>(null);
+  const isVisibleProject = useIsVisible(refProject);
+
   return (
     <main className="flex min-h-screen flex-col items-center overflow-hidden">
       <div>
         <Header />
         <section>
           <div className="relative w-screen mb-4">
-            <div className="mx-24 mt-10 flex flex-col">
+            <div
+              ref={refIntro}
+              className={`${isVisibleIntro ? "animate-fade-right" : ""} mx-24 mt-10 flex flex-col`}
+            >
               <div className="ml-12">
                 <div className="flex w-full mb-3 items-center justify-start ">
                   <span className="border-4 h-0 border-secondary w-14 mr-4 "></span>
@@ -48,7 +77,7 @@ export default function Home() {
                     </p>
                   </div>
                   <div className="max-w-60">
-                    <Button text="VER PORTIFOLIO"></Button>
+                    <Button text="VER PORTIFOLIO" href={"/Portfolio"}></Button>
                   </div>
                 </div>
               </div>
@@ -66,8 +95,13 @@ export default function Home() {
 
         <section>
           <div className="h-630 bg-tertiary">
-            <div className="py-24 px-72 flex flex-col justify-center items-center h-full font-normal w-screen text-center">
-              <span className=" font-serif text-5xl font-thin text-fontSecondary mb-4">
+            <div
+              ref={refQuote}
+              className={`${isVisibleQuote ? "animate-fade-up" : ""} py-24 px-72 flex flex-col justify-center items-center h-full font-normal w-screen text-center`}
+            >
+              <span
+                className={`font-serif text-5xl font-thin text-fontSecondary mb-4 animate-fade-up`}
+              >
                 “Se eu vi mais longe, foi porque estava sobre os ombros de
                 gigantes”
               </span>
@@ -80,7 +114,10 @@ export default function Home() {
         <section>
           <div className="relative mb-4 flex items-center justify-center mt-9">
             <div className="w-11/12">
-              <div className="px-4 py-24 flex flex-col">
+              <div
+                ref={refAbout}
+                className={`${isVisibleAbout ? "animate-fade-right" : ""} px-4 py-24 flex flex-col`}
+              >
                 <div>
                   <div className="flex w-full mb-3 items-center justify-start ">
                     <span className="border-4 h-0 border-secondary w-14 mr-4 "></span>
@@ -173,7 +210,10 @@ export default function Home() {
                   alt={""}
                 ></Image>
               </div>
-              <div className="w-full flex justify-end">
+              <div
+                ref={refExp}
+                className={`${isVisibleExp ? "animate-fade-left" : ""} w-full flex justify-end`}
+              >
                 <div className="px-4 py-24 flex flex-col">
                   <div className="flex w-full mb-3 items-center justify-start ">
                     <span className="border-4 h-0 border-secondary w-14 mr-4 "></span>
@@ -245,7 +285,10 @@ export default function Home() {
         <section>
           <div className="mb-4 flex items-center justify-center mt-9">
             <div className="w-11/12 flex justify-around items-center">
-              <div className="px-4 py-24 flex flex-col">
+              <div
+                ref={refPortfolio}
+                className={`${isVisiblePortfolio ? "animate-fade-right" : ""} px-4 py-24 flex flex-col`}
+              >
                 <div>
                   <div className="flex w-full mb-3 items-center justify-start ">
                     <span className="border-4 h-0 border-secondary w-14 mr-4 "></span>
@@ -263,19 +306,20 @@ export default function Home() {
                   <div className="">
                     <div className=" mb-9">
                       <p className="text-fontSecondary text-sans text-sm leading-8 font-light ">
-                        Graduando em Engenharia de Computação. Possuo
-                        experiência com Angular, React, Next, Spring Boot,
-                        trabalhei com AWS e estou habituado com metodologias
-                        ágeis. Atuei no time de desenvolvimento responsável pelo
-                        portal Seguros Unimed, realizando adição de novas
-                        features e novos produtos, tal qual o novo portal odonto
-                        e o odonto-lite. Também atuei no desenvolvimento do
-                        software de gestão de ativos ao qual a Home Developer é
-                        responsável. Realizei treinamentos em GraphQL, RxJS.
+                        Conheça um pouco do meu trabalho visitando meu
+                        portifolio. Nele temos alguns dos sites que programei
+                        nas tecnologias que domino. Cada página é uma
+                        oportunidade para compartilhar minha criatividade e
+                        habilidades. Espero que sua visita te traga alguma
+                        inspiração para seu projeto. <br /> <br /> Sinta-se à
+                        vontade para navegar e conhecer mais sobre meu trabalho!
                       </p>
                     </div>
                     <div className="max-w-60">
-                      <Button text="VER PORTIFOLIO"></Button>
+                      <Button
+                        text="VER PORTIFOLIO"
+                        href={"/Portfolio"}
+                      ></Button>
                     </div>
                   </div>
                 </div>
@@ -299,7 +343,10 @@ export default function Home() {
                 <Card photoAddress="/Foto1.jpg" postAddress={""}></Card>
                 <Card photoAddress="/Foto2.jpg" postAddress={""}></Card>
               </div>
-              <div className="py-16 pl-14 pr-4 flex flex-col max-w-lg">
+              <div
+                ref={refBlog}
+                className={`${isVisibleBlog ? "animate-fade-left" : ""} py-16 pl-14 pr-4 flex flex-col max-w-lg`}
+              >
                 <div>
                   <div className="flex w-full mb-3 items-center justify-start ">
                     <span className="border-4 h-0 border-secondary w-14 mr-4 "></span>
@@ -317,15 +364,17 @@ export default function Home() {
                   <div className="">
                     <div className=" mb-9">
                       <p className="text-fontSecondary text-sans text-sm leading-8 font-light ">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit. Libero explicabo, dolorem perspiciatis eligendi
-                        accusantium eveniet consequuntur possimus facere officia
-                        deserunt animi aperiam odio maiores, impedit dicta,
-                        neque illo rem voluptate.
+                        Explore meu blog e mergulhe nas tecnologias que aprendi
+                        e nos projetos que criei. É um espaço onde compartilho
+                        minhas experiências e insights, oferecendo uma visão
+                        mais aprofundada sobre meu percurso tecnológico. Convido
+                        você a descobrir as histórias por trás dos códigos e a
+                        participar das conversas sobre inovação e
+                        desenvolvimento.
                       </p>
                     </div>
                     <div className="max-w-60">
-                      <Button text="VISITAR BLOG"></Button>
+                      <Button text="VISITAR BLOG" href={"/Blog"}></Button>
                     </div>
                   </div>
                 </div>
@@ -337,7 +386,10 @@ export default function Home() {
         <section>
           <div className="mb-4 flex items-center justify-center mt-9">
             <div className="w-11/12 flex justify-around items-center">
-              <div className="px-4 py-24 flex flex-col">
+              <div
+                ref={refChat}
+                className={`${isVisibleChat ? "animate-fade-right" : ""} px-4 py-24 flex flex-col`}
+              >
                 <div>
                   <div className="flex w-full mb-3 items-center justify-start ">
                     <span className="border-4 h-0 border-secondary w-14 mr-4 "></span>
@@ -355,15 +407,18 @@ export default function Home() {
                   <div className="">
                     <div className=" mb-9">
                       <p className="text-fontSecondary text-sans text-sm leading-8 font-light ">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Repellat debitis explicabo eius inventore dignissimos
-                        deserunt dolores, fugit qui aliquam iusto perspiciatis,
-                        dolor cupiditate, labore aut pariatur laboriosam
-                        accusamus magni a.
+                        Estou à disposição para conversar! Seja para esclarecer
+                        dúvidas, discutir projetos ou simplesmente trocar ideias
+                        sobre tecnologia, estou aqui para ajudar. Sinta-se à
+                        vontade para entrar em contato, será um prazer
+                        colaborar!
                       </p>
                     </div>
                     <div className="max-w-96">
-                      <Button text="ENTRE EM CONTATO"></Button>
+                      <Button
+                        text="ENTRE EM CONTATO"
+                        href={"/Contact"}
+                      ></Button>
                     </div>
                   </div>
                 </div>
@@ -401,12 +456,15 @@ export default function Home() {
                     <div className="w-full">
                       <TextArea placeholder={"Mensagem"}></TextArea>
                     </div>
-                    <Button text={"ENVIAR"}></Button>
+                    <Button text={"ENVIAR"} href={""}></Button>
                   </form>
                 </div>
               </div>
 
-              <div className="pt-12 pl-12 pr-4 flex flex-col items-start h-full max-w-1/2">
+              <div
+                ref={refProject}
+                className={`${isVisibleProject ? "animate-fade-left" : ""} pt-12 pl-12 pr-4 flex flex-col items-start h-full max-w-1/2 `}
+              >
                 <div>
                   <div className="flex w-full mb-3 items-center justify-start ">
                     <span className="border-4 h-0 border-secondary w-14 mr-4 "></span>
@@ -424,11 +482,13 @@ export default function Home() {
                   <div className="">
                     <div className=" mb-9">
                       <p className="text-fontSecondary text-sans text-sm leading-8 font-light ">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit. Libero explicabo, dolorem perspiciatis eligendi
-                        accusantium eveniet consequuntur possimus facere officia
-                        deserunt animi aperiam odio maiores, impedit dicta,
-                        neque illo rem voluptate.
+                        Compartilhe sua ideia! Estou animado para ouvir sobre o
+                        projeto que você tem em mente. Seja qual for a sua
+                        visão, estou aqui para transformá-la em realidade. Vamos
+                        trabalhar juntos para dar vida ao seu projeto e alcançar
+                        resultados incríveis. Aguardo ansiosamente para conhecer
+                        mais sobre a sua ideia e explorar as possibilidades de
+                        desenvolvimento!
                       </p>
                     </div>
                   </div>
