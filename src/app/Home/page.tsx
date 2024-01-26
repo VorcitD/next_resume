@@ -112,11 +112,11 @@ export default function Home() {
         </section>
 
         <section>
-          <div className="relative mb-4 flex items-center justify-center mt-9">
+          <div className="relative flex items-center justify-center mt-9">
             <div className="w-11/12">
               <div
                 ref={refAbout}
-                className={`${isVisibleAbout ? "animate-fade-right" : ""} px-4 py-24 flex flex-col`}
+                className={`${isVisibleAbout ? "animate-fade-right" : ""} px-4 pt-24 pb-8 flex flex-col`}
               >
                 <div>
                   <div className="flex w-full mb-3 items-center justify-start ">
@@ -188,9 +188,9 @@ export default function Home() {
               </div>
               <div className="absolute top-28 right-16 -z-20 ">
                 <Image
-                  width={450}
+                  width={550}
                   height={300}
-                  src={"/Victor.png"}
+                  src={"/VictorCavalcanti2.png"}
                   alt={""}
                 ></Image>
               </div>
@@ -204,9 +204,10 @@ export default function Home() {
               <div className="flex justify-between items-center w-5/12 h-5/6">
                 <span className="bg-secondary h-full p-1 mr-10 "></span>
                 <Image
-                  width={450}
+                className="grayscale hover:grayscale-0 transition duration-300"
+                  width={350}
                   height={300}
-                  src={"/Victor.png"}
+                  src={"/FotoSetup2.jpeg"}
                   alt={""}
                 ></Image>
               </div>
@@ -326,9 +327,10 @@ export default function Home() {
               </div>
               <div className="">
                 <Image
+                className="grayscale hover:grayscale-0 transition duration-300"
                   width={450}
                   height={300}
-                  src={"/Victor.png"}
+                  src={"/Example1.png"}
                   alt={""}
                 ></Image>
               </div>
@@ -423,11 +425,11 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div className="">
+              <div className="hover:animate-jump hover:animate-duration-700 hover:animate-ease-linear">
                 <Image
                   width={450}
                   height={300}
-                  src={"/Victor.png"}
+                  src={"/LogoSemNome.png"}
                   alt={""}
                 ></Image>
               </div>
