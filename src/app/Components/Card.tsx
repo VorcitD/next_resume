@@ -10,7 +10,7 @@ export default function Card(props: {photoAddress:string, postAddress:string}) {
 
   return (
     <div
-      className={`flex flex-col bg-primary max-w-md mr-6 p-6 border-t-2 shadow-2xl border-secondary`}
+      className={`flex flex-col bg-primary max-w-md mx-3 p-6 border-t-2 shadow-2xl border-secondary`}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
@@ -29,7 +29,7 @@ export default function Card(props: {photoAddress:string, postAddress:string}) {
       <span className="text-secondary font-light text-LG tracking-widest">
         25 de Janeiro, 2024
       </span>
-      <p className="font-sans text-base font-light tracking-wide leading-7 text-fontSecondary my-2 ">
+      <p className="font-sans text-base font-light tracking-wide leading-7 overflow-hidden max-h-40 text-fontSecondary my-2 ">
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia et, rem
         reiciendis ut quibusdam rerum nobis, animi delectus assumenda minima aut
         obcaecati, reprehenderit atque necessitatibus molestias iste! Non,

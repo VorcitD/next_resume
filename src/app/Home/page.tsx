@@ -39,102 +39,109 @@ export default function Home() {
   const isVisibleProject = useIsVisible(refProject);
 
   return (
-    <main className="flex min-h-screen flex-col items-center overflow-hidden">
-      <div>
+    <main>
+      <div className="overver w-screen overflow-hidden">
         <Header />
+
         <section>
-          <div className="relative w-screen mb-4">
-            <div
-              ref={refIntro}
-              className={`${isVisibleIntro ? "animate-fade-right" : ""} mx-24 mt-10 flex flex-col`}
-            >
-              <div className="ml-12">
-                <div className="flex w-full mb-3 items-center justify-start ">
-                  <span className="border-4 h-0 border-secondary w-14 mr-4 "></span>
-                  <span className="font-light text-lg tracking-widest">
-                    FULL-STACK WEB DEVELOPER
-                  </span>
-                </div>
-                <div>
-                  <span className="font-medium text-fontPrimary text-9xl font-serif">
-                    VICTOR <br /> CAVALCANTI
-                  </span>
-                </div>
-              </div>
-              <div className="flex max-w-xl max-h-full mt-20">
-                <div className="flex">
-                  <div className="bg-secondary h-full w-6 mr-4 "></div>
-                </div>
-                <div className="ml-4">
-                  <SocialMediaMenu />
-                  <div className="mt-5 mb-8">
-                    <p className="text-fontSecondary text-sans text-sm leading-8 font-light ">
-                      Sou Goiano, tenho 22 anos e estou no ultimo periodo da
-                      minha graduação em Engenharia de Computação pelo Centro
-                      Federal de Educação Tecnológica de Minas Gerais (CEFET).
-                      Atualmente sou Desenvolvedor Web Full-Stack Júnior, pelo
-                      HomeDeveloper, empresa de Desenvolvimento de Software.
-                    </p>
+          <div className="flex w-full items-center px-12">
+            <div className="relative mb-4 flex w-full items-center justify-between ">
+              <div
+                ref={refIntro}
+                className={`${isVisibleIntro ? "animate-fade-right" : ""} mt-10 flex flex-col`}
+              >
+                <div className="md:ml-12">
+                  <div className="mb-3 flex w-full items-center justify-start py-4">
+                    <span className="mr-4 h-0 w-14 border-4 border-secondary "></span>
+                    <span className="text-sm font-light tracking-widest md:text-lg">
+                      FULL-STACK WEB DEVELOPER
+                    </span>
                   </div>
-                  <div className="max-w-60">
-                    <Button text="VER PORTIFOLIO" href={"/Portfolio"}></Button>
+                  <div>
+                    <span className="font-serif text-5xl font-medium text-fontPrimary md:text-8xl lg:text-9xl">
+                      VICTOR <br /> CAVALCANTI
+                    </span>
                   </div>
                 </div>
+                <div className="mt-10 flex max-h-full max-w-xl">
+                  <div className="flex">
+                    <div className="mr-4 hidden h-full w-6 bg-secondary md:block "></div>
+                  </div>
+                  <div className="ml-4">
+                    <SocialMediaMenu />
+                    <div className="mb-8 mt-5">
+                      <p className="text-sans text-sm font-light leading-8 text-fontSecondary ">
+                        Sou Goiano, tenho 22 anos e estou no ultimo periodo da
+                        minha graduação em Engenharia de Computação pelo Centro
+                        Federal de Educação Tecnológica de Minas Gerais (CEFET).
+                        Atualmente sou Desenvolvedor Web Full-Stack Júnior, pelo
+                        HomeDeveloper, empresa de Desenvolvimento de Software.
+                      </p>
+                    </div>
+                    <div className="max-w-60 flex items-center">
+                      <Button
+                        text="VER PORTIFOLIO"
+                        href={"/Portfolio"}
+                      ></Button>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </div>
-            <div className="absolute bottom-0 right-16 -z-20 ">
-              <Image
-                width={450}
-                height={300}
-                src={"/Victor.png"}
-                alt={""}
-              ></Image>
+
+              <div className="absolute bottom-0 right-0 -z-20  hidden w-full justify-end lg:flex">
+                <Image
+                  width={450}
+                  height={300}
+                  src={"/Victor.png"}
+                  alt={""}
+                ></Image>
+              </div>
             </div>
           </div>
         </section>
 
         <section>
-          <div className="h-630 bg-tertiary">
+          <div className="flex h-630 items-center justify-center bg-tertiary">
             <div
               ref={refQuote}
-              className={`${isVisibleQuote ? "animate-fade-up" : ""} py-24 px-72 flex flex-col justify-center items-center h-full font-normal w-screen text-center`}
+              className={`${isVisibleQuote ? "animate-fade-up" : ""} flex h-full w-screen flex-col items-center justify-center px-24 py-24 text-center font-normal`}
             >
               <span
-                className={`font-serif text-5xl font-thin text-fontSecondary mb-4 animate-fade-up`}
+                className={`mb-4 animate-fade-up font-serif text-5xl font-thin text-fontSecondary`}
               >
                 “Se eu vi mais longe, foi porque estava sobre os ombros de
                 gigantes”
               </span>
-              <span className="border-4 h-0 border-secondary w-14 my-6 "></span>
+              <span className="my-6 h-0 w-14 border-4 border-secondary "></span>
               <span className="font-serif">Isaac Newton</span>
             </div>
           </div>
         </section>
 
         <section>
-          <div className="relative flex items-center justify-center mt-9">
+          <div className="relative mt-9 flex items-center justify-center">
             <div className="w-11/12">
               <div
                 ref={refAbout}
-                className={`${isVisibleAbout ? "animate-fade-right" : ""} px-4 pt-24 pb-8 flex flex-col`}
+                className={`${isVisibleAbout ? "animate-fade-right" : ""} flex flex-col px-4 pb-8 pt-24`}
               >
                 <div>
-                  <div className="flex w-full mb-3 items-center justify-start ">
-                    <span className="border-4 h-0 border-secondary w-14 mr-4 "></span>
-                    <span className="font-light text-lg tracking-widest">
+                  <div className="mb-3 flex w-full items-center justify-start ">
+                    <span className="mr-4 h-0 w-14 border-4 border-secondary "></span>
+                    <span className="text-lg font-light tracking-widest">
                       SOBRE MIM
                     </span>
                   </div>
                   <div className="mb-12">
-                    <span className="font-medium text-fontPrimary text-7xl font-serif">
+                    <span className="font-serif text-6xl md:text-7xl font-medium text-fontPrimary">
                       Sou Desenvolvedor Web <br /> Full-Stack
                     </span>
                   </div>
                 </div>
-                <div className="flex max-w-xl max-h-full">
+                <div className="flex max-h-full max-w-xl">
                   <div className="">
                     <div className=" mb-9">
-                      <p className="text-fontSecondary text-sans text-sm leading-8 font-light ">
+                      <p className="text-sans text-sm font-light leading-8 text-fontSecondary ">
                         Graduando em Engenharia de Computação. Possuo
                         experiência com Angular, React, Next, Spring Boot,
                         trabalhei com AWS e estou habituado com metodologias
@@ -147,38 +154,38 @@ export default function Home() {
                       </p>
                     </div>
                     <SocialMediaMenu />
-                    <hr className="border-fontSecondary opacity-15 my-6" />
+                    <hr className="my-6 border-fontSecondary opacity-15" />
                     <div className="">
-                      <span className="text-secondary font-light text-LG tracking-widest">
+                      <span className="text-LG font-light tracking-widest text-secondary">
                         HABILIDADES
                       </span>
-                      <div className="flex items-center justify-start mt-5">
-                        <FiChevronsRight className="text-secondary mr-3" />
-                        <span className="text-fontSecondary text-sm font-thin font-sans">
+                      <div className="mt-5 flex items-center justify-start">
+                        <FiChevronsRight className="mr-3 text-secondary" />
+                        <span className="font-sans text-sm font-thin text-fontSecondary">
                           React, Next, Angular
                         </span>
                       </div>
-                      <div className="flex items-center justify-start mt-5">
-                        <FiChevronsRight className="text-secondary mr-3" />
-                        <span className="text-fontSecondary text-sm font-thin font-sans">
+                      <div className="mt-5 flex items-center justify-start">
+                        <FiChevronsRight className="mr-3 text-secondary" />
+                        <span className="font-sans text-sm font-thin text-fontSecondary">
                           Node, SpringBoot
                         </span>
                       </div>
-                      <div className="flex items-center justify-start mt-5">
-                        <FiChevronsRight className="text-secondary mr-3" />
-                        <span className="text-fontSecondary text-sm font-thin font-sans">
+                      <div className="mt-5 flex items-center justify-start">
+                        <FiChevronsRight className="mr-3 text-secondary" />
+                        <span className="font-sans text-sm font-thin text-fontSecondary">
                           Typescript, Javascript, Java
                         </span>
                       </div>
-                      <div className="flex items-center justify-start mt-5">
-                        <FiChevronsRight className="text-secondary mr-3" />
-                        <span className="text-fontSecondary text-sm font-thin font-sans">
+                      <div className="mt-5 flex items-center justify-start">
+                        <FiChevronsRight className="mr-3 text-secondary" />
+                        <span className="font-sans text-sm font-thin text-fontSecondary">
                           HTML, CSS, SASS, Tailwind, Bootstrap
                         </span>
                       </div>
-                      <div className="flex items-center justify-start mt-5">
-                        <FiChevronsRight className="text-secondary mr-3" />
-                        <span className="text-fontSecondary text-sm font-thin font-sans">
+                      <div className="mt-5 flex items-center justify-start">
+                        <FiChevronsRight className="mr-3 text-secondary" />
+                        <span className="font-sans text-sm font-thin text-fontSecondary">
                           GraphQL, Restful API, AWS
                         </span>
                       </div>
@@ -186,7 +193,7 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div className="absolute top-28 right-16 -z-20 ">
+              <div className="absolute right-16 top-28 -z-20 hidden lg:block ">
                 <Image
                   width={550}
                   height={300}
@@ -199,47 +206,47 @@ export default function Home() {
         </section>
 
         <section>
-          <div className="mb-4 flex items-center justify-center py-10 bg-tertiary">
-            <div className="w-11/12 flex justify-around items-center h-screen">
-              <div className="flex justify-between items-center w-5/12 h-5/6">
-                <span className="bg-secondary h-full p-1 mr-10 "></span>
+          <div className="mb-4 flex items-center justify-center bg-tertiary py-10">
+            <div className="flex w-11/12 items-start justify-around py-24">
+              <div className="hidden w-2/5 items-start justify-start border-l-8 border-secondary lg:flex">
                 <Image
-                className="grayscale hover:grayscale-0 transition duration-300"
-                  width={350}
+                  className="h-full pl-10 grayscale transition duration-300 hover:grayscale-0 "
+                  width={430}
                   height={300}
                   src={"/FotoSetup2.jpeg"}
                   alt={""}
                 ></Image>
               </div>
+
               <div
                 ref={refExp}
-                className={`${isVisibleExp ? "animate-fade-left" : ""} w-full flex justify-end`}
+                className={`${isVisibleExp ? "animate-fade-left" : ""} flex w-full justify-end lg:w-3/5`}
               >
-                <div className="px-4 py-24 flex flex-col">
-                  <div className="flex w-full mb-3 items-center justify-start ">
-                    <span className="border-4 h-0 border-secondary w-14 mr-4 "></span>
-                    <span className="font-light text-lg tracking-widest">
+                <div className="flex flex-col px-4">
+                  <div className="mb-3 flex w-full items-center justify-start ">
+                    <span className="mr-4 h-0 w-14 border-4 border-secondary "></span>
+                    <span className="text-lg font-light tracking-widest">
                       CURRÍCULO
                     </span>
                   </div>
                   <div className="mb-12">
-                    <span className="font-medium text-fontPrimary text-7xl font-serif">
+                    <span className="font-serif text-7xl font-medium text-fontPrimary">
                       Minhas Experiências
                     </span>
                   </div>
-                  <div className="flex max-w-3xl max-h-full">
+                  <div className="flex max-h-full">
                     <div className="flex flex-col">
                       <div className=" flex flex-col">
-                        <span className="mb-1 text-fontPrimary text-2xl font-bold font-serif">
+                        <span className="mb-1 font-serif text-2xl font-bold text-fontPrimary">
                           Desenvolvedor Web Full Stack
                         </span>
-                        <span className="mb-2 text-fontSecondary text-lg font-thin font-serif">
+                        <span className="mb-2 font-serif text-lg font-thin text-fontSecondary">
                           Home Developer LTDA - São Paulo-SP (Remoto)
                         </span>
-                        <span className="mb-1 text-secondary text-sm font-thin font-sans">
+                        <span className="mb-1 font-sans text-sm font-thin text-secondary">
                           FEVEREIRO 2023 - ATUAL
                         </span>
-                        <p className="text-fontSecondary text-sans text-sm leading-8 font-light ">
+                        <p className="text-sans text-sm font-light leading-8 text-fontSecondary ">
                           Experiência focada em Back End usando Spring Boot e
                           banco de dados SQL, exercendo manutenção de sistemas
                           legados, modelagem e desenvolvimento de novos
@@ -250,19 +257,19 @@ export default function Home() {
                           FinTechs.
                         </p>
                       </div>
-                      <span className="bg-secondary h-full w-1 py-6 ml-2 my-2 "></span>
+                      <span className="my-2 ml-2 h-full w-1 bg-secondary py-6 "></span>
                       <div className=" mb-9 flex flex-col">
-                        <span className="mb-1 text-fontPrimary text-2xl font-bold font-serif">
+                        <span className="mb-1 font-serif text-2xl font-bold text-fontPrimary">
                           Estagiário em Desenvolvimento Web Full Stack
                         </span>
-                        <span className="mb-2 text-fontSecondary text-lg font-thin font-serif">
+                        <span className="mb-2 font-serif text-lg font-thin text-fontSecondary">
                           Tokenlab Tecnologia da Informação LTDA - São Carlos-SP
                           (Remoto)
                         </span>
-                        <span className="mb-1 text-secondary text-sm font-thin font-sans">
+                        <span className="mb-1 font-sans text-sm font-thin text-secondary">
                           OUTUBRO 2021 - FEVEREIRO 2023
                         </span>
-                        <p className="text-fontSecondary text-sans text-sm leading-8 font-light ">
+                        <p className="text-sans text-sm font-light leading-8 text-fontSecondary ">
                           Experiência com desenvolvimento Web, focado em Front
                           End. Utilizando Typescript, Angular com integração
                           Wordpress, estilização SCSS, a serviço do Portal
@@ -284,29 +291,29 @@ export default function Home() {
         </section>
 
         <section>
-          <div className="mb-4 flex items-center justify-center mt-9">
-            <div className="w-11/12 flex justify-around items-center">
+          <div className="mb-4 mt-9 flex items-center justify-center">
+            <div className="flex w-11/12 flex-wrap items-center justify-around">
               <div
                 ref={refPortfolio}
-                className={`${isVisiblePortfolio ? "animate-fade-right" : ""} px-4 py-24 flex flex-col`}
+                className={`${isVisiblePortfolio ? "animate-fade-right" : ""} flex max-w-xl flex-col px-4 py-24`}
               >
                 <div>
-                  <div className="flex w-full mb-3 items-center justify-start ">
-                    <span className="border-4 h-0 border-secondary w-14 mr-4 "></span>
-                    <span className="font-light text-lg tracking-widest">
+                  <div className="mb-3 flex w-full items-center justify-start ">
+                    <span className="mr-4 h-0 w-14 border-4 border-secondary "></span>
+                    <span className="text-lg font-light tracking-widest">
                       MEU PORTIFOLIO
                     </span>
                   </div>
                   <div className="mb-12">
-                    <span className="font-medium text-fontPrimary text-7xl font-serif">
+                    <span className="font-serif text-7xl font-medium text-fontPrimary">
                       Trabalho Recente Concluído
                     </span>
                   </div>
                 </div>
-                <div className="flex max-w-xl max-h-full">
+                <div className="flex max-h-full ">
                   <div className="">
                     <div className=" mb-9">
-                      <p className="text-fontSecondary text-sans text-sm leading-8 font-light ">
+                      <p className="text-sans text-sm font-light leading-8 text-fontSecondary ">
                         Conheça um pouco do meu trabalho visitando meu
                         portifolio. Nele temos alguns dos sites que programei
                         nas tecnologias que domino. Cada página é uma
@@ -327,7 +334,7 @@ export default function Home() {
               </div>
               <div className="">
                 <Image
-                className="grayscale hover:grayscale-0 transition duration-300"
+                  className="grayscale transition duration-300 hover:grayscale-0"
                   width={450}
                   height={300}
                   src={"/Example1.png"}
@@ -339,33 +346,33 @@ export default function Home() {
         </section>
 
         <section>
-          <div className="mb-4 flex items-center justify-center mt-9 py-28 px-5 bg-tertiary">
-            <div className="w-11/12 flex items-center">
-              <div className="flex h-full w-full justify-between items-center">
+          <div className="mb-4 mt-9 flex items-center justify-center bg-tertiary py-28">
+            <div className="flex w-11/12 flex-wrap-reverse items-center lg:flex-nowrap">
+              <div className="flex h-full flex-wrap items-center justify-between md:flex-nowrap">
                 <Card photoAddress="/Foto1.jpg" postAddress={""}></Card>
                 <Card photoAddress="/Foto2.jpg" postAddress={""}></Card>
               </div>
               <div
                 ref={refBlog}
-                className={`${isVisibleBlog ? "animate-fade-left" : ""} py-16 pl-14 pr-4 flex flex-col max-w-lg`}
+                className={`${isVisibleBlog ? "animate-fade-left" : ""} flex flex-col px-8 py-16 lg:max-w-lg`}
               >
                 <div>
-                  <div className="flex w-full mb-3 items-center justify-start ">
-                    <span className="border-4 h-0 border-secondary w-14 mr-4 "></span>
-                    <span className="font-light text-lg tracking-widest">
+                  <div className="mb-3 flex w-full items-center justify-start ">
+                    <span className="mr-4 h-0 w-14 border-4 border-secondary "></span>
+                    <span className="text-lg font-light tracking-widest">
                       PUBLICAÇÕES RECENTES
                     </span>
                   </div>
                   <div className="mb-12">
-                    <span className="font-medium text-fontPrimary text-7xl font-serif">
+                    <span className="font-serif text-7xl font-medium text-fontPrimary">
                       Veja Meus Artigos Recentes
                     </span>
                   </div>
                 </div>
-                <div className="flex max-w-xl max-h-full">
+                <div className="flex max-h-full max-w-xl">
                   <div className="">
                     <div className=" mb-9">
-                      <p className="text-fontSecondary text-sans text-sm leading-8 font-light ">
+                      <p className="text-sans text-sm font-light leading-8 text-fontSecondary ">
                         Explore meu blog e mergulhe nas tecnologias que aprendi
                         e nos projetos que criei. É um espaço onde compartilho
                         minhas experiências e insights, oferecendo uma visão
@@ -386,29 +393,29 @@ export default function Home() {
         </section>
 
         <section>
-          <div className="mb-4 flex items-center justify-center mt-9">
-            <div className="w-11/12 flex justify-around items-center">
+          <div className="mb-4 mt-9 flex items-center justify-center">
+            <div className="flex w-11/12 flex-wrap items-center justify-around md:flex-nowrap">
               <div
                 ref={refChat}
-                className={`${isVisibleChat ? "animate-fade-right" : ""} px-4 py-24 flex flex-col`}
+                className={`${isVisibleChat ? "animate-fade-right" : ""} flex flex-col px-4 py-24`}
               >
                 <div>
-                  <div className="flex w-full mb-3 items-center justify-start ">
-                    <span className="border-4 h-0 border-secondary w-14 mr-4 "></span>
-                    <span className="font-light text-lg tracking-widest">
+                  <div className="mb-3 flex w-full items-center justify-start ">
+                    <span className="mr-4 h-0 w-14 border-4 border-secondary "></span>
+                    <span className="text-lg font-light tracking-widest">
                       FALE COMIGO
                     </span>
                   </div>
                   <div className="mb-12">
-                    <span className="font-medium text-fontPrimary text-7xl font-serif">
+                    <span className="font-serif text-7xl font-medium text-fontPrimary">
                       Vamos Conversar
                     </span>
                   </div>
                 </div>
-                <div className="flex max-w-xl max-h-full">
+                <div className="flex max-h-full max-w-xl">
                   <div className="">
                     <div className=" mb-9">
-                      <p className="text-fontSecondary text-sans text-sm leading-8 font-light ">
+                      <p className="text-sans text-sm font-light leading-8 text-fontSecondary ">
                         Estou à disposição para conversar! Seja para esclarecer
                         dúvidas, discutir projetos ou simplesmente trocar ideias
                         sobre tecnologia, estou aqui para ajudar. Sinta-se à
@@ -438,17 +445,17 @@ export default function Home() {
         </section>
 
         <section>
-          <div className="mb-4 flex items-center justify-center mt-9 py-28 bg-tertiary ">
-            <div className="w-11/12 flex items-start justify-center">
-              <div className="flex flex-col justify-center items-center w-1/2 ">
+          <div className="mb-4 mt-9 flex items-center justify-center bg-tertiary py-28 ">
+            <div className="bg:flex-nowrap flex w-11/12 flex-wrap-reverse items-start justify-center">
+              <div className="hidden md:block">
                 <GrayImageText
                   photoAddress={"/Foto3.jpg"}
                   text={"ENTRE EM CONTATO"}
                 ></GrayImageText>
-                <div className="flex w-full justify-center items-center">
+                <div className="flex w-full items-center justify-center">
                   <form className="w-full" action="">
-                    <div className="flex items-center justify-between my-8">
-                      <div className="w-80 mr-4">
+                    <div className="my-8 flex items-center justify-between">
+                      <div className="mr-4 w-80">
                         <Input type={""} placeholder={"Nome"}></Input>
                       </div>
                       <div className="w-80">
@@ -465,54 +472,52 @@ export default function Home() {
 
               <div
                 ref={refProject}
-                className={`${isVisibleProject ? "animate-fade-left" : ""} pt-12 pl-12 pr-4 flex flex-col items-start h-full max-w-1/2 `}
+                className={`${isVisibleProject ? "animate-fade-left" : ""} max-w-1/2 flex h-full flex-col items-start px-4 pt-12 `}
               >
                 <div>
-                  <div className="flex w-full mb-3 items-center justify-start ">
-                    <span className="border-4 h-0 border-secondary w-14 mr-4 "></span>
-                    <span className="font-light text-lg tracking-widest">
+                  <div className="mb-3 flex w-full items-center justify-start ">
+                    <span className="mr-4 h-0 w-14 border-4 border-secondary "></span>
+                    <span className="text-lg font-light tracking-widest">
                       ENCOMENDE JÁ
                     </span>
                   </div>
                   <div className="mb-12">
-                    <span className="font-medium text-fontPrimary text-7xl font-serif w-full">
+                    <span className="w-full font-serif text-7xl font-medium text-fontPrimary">
                       Tem um Projeto?
                     </span>
                   </div>
                 </div>
-                <div className="flex flex-col max-w-xl max-h-full">
-                  <div className="">
-                    <div className=" mb-9">
-                      <p className="text-fontSecondary text-sans text-sm leading-8 font-light ">
-                        Compartilhe sua ideia! Estou animado para ouvir sobre o
-                        projeto que você tem em mente. Seja qual for a sua
-                        visão, estou aqui para transformá-la em realidade. Vamos
-                        trabalhar juntos para dar vida ao seu projeto e alcançar
-                        resultados incríveis. Aguardo ansiosamente para conhecer
-                        mais sobre a sua ideia e explorar as possibilidades de
-                        desenvolvimento!
-                      </p>
-                    </div>
+                <div className="flex max-h-full max-w-xl flex-col">
+                  <div className=" mb-9">
+                    <p className="text-sans text-sm font-light leading-8 text-fontSecondary ">
+                      Compartilhe sua ideia! Estou animado para ouvir sobre o
+                      projeto que você tem em mente. Seja qual for a sua visão,
+                      estou aqui para transformá-la em realidade. Vamos
+                      trabalhar juntos para dar vida ao seu projeto e alcançar
+                      resultados incríveis. Aguardo ansiosamente para conhecer
+                      mais sobre a sua ideia e explorar as possibilidades de
+                      desenvolvimento!
+                    </p>
                   </div>
-                  <div className="flex justify-between max-w-full">
-                    <div className="flex justify-center items-center">
-                      <FiMail className="text-secondary text-5xl mr-4"></FiMail>
+                  <div className="flex max-w-full flex-wrap justify-between">
+                    <div className="mb-2 flex items-center justify-center">
+                      <FiMail className="mr-4 text-5xl text-secondary"></FiMail>
                       <div>
-                        <span className="font-thin tracking-widest text-fontPrimary font-sans text-xl mb-2">
+                        <span className="mb-2 font-sans text-xl font-thin tracking-widest text-fontPrimary">
                           Email
                         </span>
-                        <p className="font-thin tracking-widest text-fontSecondary font-sans text-base mb-2">
+                        <p className="mb-2 font-sans text-base font-thin tracking-widest text-fontSecondary">
                           vitimendoza@gmail.com
                         </p>
                       </div>
                     </div>
-                    <div className="flex justify-center items-center">
-                      <FiPhone className="text-secondary text-5xl mr-4"></FiPhone>
+                    <div className="mb-2 flex items-center justify-center">
+                      <FiPhone className="mr-4 text-5xl text-secondary"></FiPhone>
                       <div>
-                        <span className="font-thin tracking-widest text-fontPrimary font-sans text-xl mb-2">
+                        <span className="mb-2 font-sans text-xl font-thin tracking-widest text-fontPrimary">
                           Telefone
                         </span>
-                        <p className="font-thin tracking-widest text-fontSecondary font-sans text-base mb-2">
+                        <p className="mb-2 font-sans text-base font-thin tracking-widest text-fontSecondary">
                           (62) 9 9918-9082
                         </p>
                       </div>

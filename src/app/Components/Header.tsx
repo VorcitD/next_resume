@@ -2,26 +2,56 @@ import Link from "next/link";
 import Button from "./Button";
 import Image from "next/image";
 
-
 export default function Header() {
-    return (
-      <section className="h-32 pt-10 w-screen flex justify-between items-center px-8">
-        <div className="pl-9">
-          <Image src="/LogoVCBranca.png" width="180" height="79" alt={"Logo"}></Image>
-          </div>
-        <div className="h-full p-5 flex justify-center items-center">
-            <nav className="text-lg text-fontPrimary font-thin tracking-widest fill-fontPrimary font-serif h-full flex justify-center items-center ">
-                <Link className="px-7 pb-2 hover:text-secondary hover:border-b hover:border-secondary transition duration-300 " href="">Inicio</Link>
-                <Link className="px-7 pb-2 hover:text-secondary hover:border-b hover:border-secondary transition duration-300 " href="">Sobre</Link>
-                <Link className="px-7 pb-2 hover:text-secondary hover:border-b hover:border-secondary transition duration-300 " href="">Portifolio</Link>
-                <Link className="px-7 pb-2 hover:text-secondary hover:border-b hover:border-secondary transition duration-300 " href="">Blog</Link>
-                <Link className="px-7 pb-2 hover:text-secondary hover:border-b hover:border-secondary transition duration-300 " href="">Contatos</Link>
-            </nav>
+  return (
+    <section>
+      <div className="hidden lg:flex h-32 w-full items-center justify-between px-12 pt-10">
+        <div className="">
+          <Image
+            src="/LogoVCBranca.png"
+            width="180"
+            height="79"
+            alt={"Logo"}
+          ></Image>
         </div>
-        <div className="pr-9">
-            <Button text="CONTRATE"/>
+        <div className="flex h-full items-center justify-center p-5">
+          <nav className="flex h-full items-center justify-center fill-fontPrimary font-serif text-lg font-thin tracking-widest text-fontPrimary ">
+            <Link
+              className="px-7 pb-2 transition duration-300 hover:border-b hover:border-secondary hover:text-secondary "
+              href="/Home"
+            >
+              Inicio
+            </Link>
+            <Link
+              className="px-7 pb-2 transition duration-300 hover:border-b hover:border-secondary hover:text-secondary "
+              href="https://www.linkedin.com/in/victormendozac/"
+            >
+              Sobre
+            </Link>
+            <Link
+              className="px-7 pb-2 transition duration-300 hover:border-b hover:border-secondary hover:text-secondary "
+              href="https://github.com/VorcitD"
+            >
+              Portifolio
+            </Link>
+            <Link
+              className="px-7 pb-2 transition duration-300 hover:border-b hover:border-secondary hover:text-secondary "
+              href=""
+            >
+              Blog
+            </Link>
+            <Link
+              className="px-7 pb-2 transition duration-300 hover:border-b hover:border-secondary hover:text-secondary "
+              href=""
+            >
+              Contatos
+            </Link>
+          </nav>
         </div>
-      </section>
-    )
-  }
-  
+        <div className="">
+          <Button text="CONTRATE" />
+        </div>
+      </div>
+    </section>
+  );
+}
