@@ -133,7 +133,7 @@ export default function Home() {
                     </span>
                   </div>
                   <div className="mb-12">
-                    <span className="font-serif text-6xl md:text-7xl font-medium text-fontPrimary">
+                    <span className="font-serif text-5xl md:text-7xl font-medium text-fontPrimary">
                       Sou Desenvolvedor Web <br /> Full-Stack
                     </span>
                   </div>
@@ -230,7 +230,7 @@ export default function Home() {
                     </span>
                   </div>
                   <div className="mb-12">
-                    <span className="font-serif text-7xl font-medium text-fontPrimary">
+                    <span className="font-serif text-6xl md:text-7xl font-medium text-fontPrimary">
                       Minhas Experiências
                     </span>
                   </div>
