@@ -58,7 +58,7 @@ export default function Home() {
                     </span>
                   </div>
                   <div>
-                    <span className="font-serif text-5xl font-medium text-fontPrimary md:text-8xl lg:text-9xl">
+                    <span className="font-serif text-4xl font-medium text-fontPrimary md:text-8xl lg:text-9xl">
                       VICTOR <br /> CAVALCANTI
                     </span>
                   </div>
@@ -104,10 +104,10 @@ export default function Home() {
           <div className="flex h-630 items-center justify-center bg-tertiary">
             <div
               ref={refQuote}
-              className={`${isVisibleQuote ? "animate-fade-up" : ""} flex h-full w-screen flex-col items-center justify-center px-24 py-24 text-center font-normal`}
+              className={`${isVisibleQuote ? "animate-fade-up" : ""} flex h-full w-screen flex-col items-center justify-center px-12 md:px-24 py-24 text-center font-normal`}
             >
               <span
-                className={`mb-4 animate-fade-up font-serif text-5xl font-thin text-fontSecondary`}
+                className={`mb-4 animate-fade-up font-serif text-3xl md:text-5xl font-thin text-fontSecondary`}
               >
                 “Se eu vi mais longe, foi porque estava sobre os ombros de
                 gigantes”
@@ -128,7 +128,7 @@ export default function Home() {
                 <div>
                   <div className="mb-3 flex w-full items-center justify-start ">
                     <span className="mr-4 h-0 w-14 border-4 border-secondary "></span>
-                    <span className="text-lg font-light tracking-widest">
+                    <span className="text-sm md:text-lg font-light tracking-widest">
                       SOBRE MIM
                     </span>
                   </div>
@@ -225,25 +225,25 @@ export default function Home() {
                 <div className="flex flex-col px-4">
                   <div className="mb-3 flex w-full items-center justify-start ">
                     <span className="mr-4 h-0 w-14 border-4 border-secondary "></span>
-                    <span className="text-lg font-light tracking-widest">
+                    <span className="text-sm md:text-lg font-light tracking-widest">
                       CURRÍCULO
                     </span>
                   </div>
-                  <div className="mb-12">
-                    <span className="font-serif text-6xl md:text-7xl font-medium text-fontPrimary">
+                  <div className="mb-8 md:mb-12">
+                    <span className="font-serif text-5xl md:text-7xl font-medium text-fontPrimary">
                       Minhas Experiências
                     </span>
                   </div>
                   <div className="flex max-h-full">
                     <div className="flex flex-col">
                       <div className=" flex flex-col">
-                        <span className="mb-1 font-serif text-2xl font-bold text-fontPrimary">
+                        <span className="mb-1 font-serif text-xl md:text-2xl font-bold text-fontPrimary">
                           Desenvolvedor Web Full Stack
                         </span>
-                        <span className="mb-2 font-serif text-lg font-thin text-fontSecondary">
+                        <span className="mb-2 font-serif text-base md:text-lg font-thin text-fontSecondary">
                           Home Developer LTDA - São Paulo-SP (Remoto)
                         </span>
-                        <span className="mb-1 font-sans text-sm font-thin text-secondary">
+                        <span className="mb-1 font-sans text-xs md:text-sm font-thin text-secondary">
                           FEVEREIRO 2023 - ATUAL
                         </span>
                         <p className="text-sans text-sm font-light leading-8 text-fontSecondary ">
@@ -258,15 +258,15 @@ export default function Home() {
                         </p>
                       </div>
                       <span className="my-2 ml-2 h-full w-1 bg-secondary py-6 "></span>
-                      <div className=" mb-9 flex flex-col">
-                        <span className="mb-1 font-serif text-2xl font-bold text-fontPrimary">
+                      <div className="mb-4 md:mb-9 flex flex-col">
+                        <span className="mb-1 font-serif text-xl md:text-2xl font-bold text-fontPrimary">
                           Estagiário em Desenvolvimento Web Full Stack
                         </span>
-                        <span className="mb-2 font-serif text-lg font-thin text-fontSecondary">
+                        <span className="mb-2 font-serif text-base md:text-lg font-thin text-fontSecondary">
                           Tokenlab Tecnologia da Informação LTDA - São Carlos-SP
                           (Remoto)
                         </span>
-                        <span className="mb-1 font-sans text-sm font-thin text-secondary">
+                        <span className="mb-1 font-sans text-xs md:text-sm font-thin text-secondary">
                           OUTUBRO 2021 - FEVEREIRO 2023
                         </span>
                         <p className="text-sans text-sm font-light leading-8 text-fontSecondary ">
@@ -300,12 +300,12 @@ export default function Home() {
                 <div>
                   <div className="mb-3 flex w-full items-center justify-start ">
                     <span className="mr-4 h-0 w-14 border-4 border-secondary "></span>
-                    <span className="text-lg font-light tracking-widest">
+                    <span className="text-sm md:text-lg font-light tracking-widest">
                       MEU PORTIFOLIO
                     </span>
                   </div>
                   <div className="mb-12">
-                    <span className="font-serif text-7xl font-medium text-fontPrimary">
+                    <span className="font-serif text-5xl md:text-7xl font-medium text-fontPrimary">
                       Trabalho Recente Concluído
                     </span>
                   </div>
@@ -359,12 +359,12 @@ export default function Home() {
                 <div>
                   <div className="mb-3 flex w-full items-center justify-start ">
                     <span className="mr-4 h-0 w-14 border-4 border-secondary "></span>
-                    <span className="text-lg font-light tracking-widest">
+                    <span className="text-sm md:text-lg font-light tracking-widest">
                       PUBLICAÇÕES RECENTES
                     </span>
                   </div>
                   <div className="mb-12">
-                    <span className="font-serif text-7xl font-medium text-fontPrimary">
+                    <span className="font-serif text-5xl md:text-7xl font-medium text-fontPrimary">
                       Veja Meus Artigos Recentes
                     </span>
                   </div>
@@ -402,12 +402,12 @@ export default function Home() {
                 <div>
                   <div className="mb-3 flex w-full items-center justify-start ">
                     <span className="mr-4 h-0 w-14 border-4 border-secondary "></span>
-                    <span className="text-lg font-light tracking-widest">
+                    <span className="text-sm md:text-lg font-light tracking-widest">
                       FALE COMIGO
                     </span>
                   </div>
                   <div className="mb-12">
-                    <span className="font-serif text-7xl font-medium text-fontPrimary">
+                    <span className="font-serif text-6xl md:text-7xl font-medium text-fontPrimary">
                       Vamos Conversar
                     </span>
                   </div>
@@ -477,12 +477,12 @@ export default function Home() {
                 <div>
                   <div className="mb-3 flex w-full items-center justify-start ">
                     <span className="mr-4 h-0 w-14 border-4 border-secondary "></span>
-                    <span className="text-lg font-light tracking-widest">
+                    <span className="text-sm md:text-lg font-light tracking-widest">
                       ENCOMENDE JÁ
                     </span>
                   </div>
                   <div className="mb-12">
-                    <span className="w-full font-serif text-7xl font-medium text-fontPrimary">
+                    <span className="w-full font-serif text-6xl md:text-7xl font-medium text-fontPrimary">
                       Tem um Projeto?
                     </span>
                   </div>
@@ -501,23 +501,23 @@ export default function Home() {
                   </div>
                   <div className="flex max-w-full flex-wrap justify-between">
                     <div className="mb-2 flex items-center justify-center">
-                      <FiMail className="mr-4 text-5xl text-secondary"></FiMail>
+                      <FiMail className="mr-4 text-4xl md:text-5xl text-secondary"></FiMail>
                       <div>
-                        <span className="mb-2 font-sans text-xl font-thin tracking-widest text-fontPrimary">
+                        <span className="mb-2 font-sans text-base md:text-xl font-thin tracking-widest text-fontPrimary">
                           Email
                         </span>
-                        <p className="mb-2 font-sans text-base font-thin tracking-widest text-fontSecondary">
+                        <p className="mb-2 font-sans text-sm md:text-base font-thin tracking-widest text-fontSecondary">
                           vitimendoza@gmail.com
                         </p>
                       </div>
                     </div>
                     <div className="mb-2 flex items-center justify-center">
-                      <FiPhone className="mr-4 text-5xl text-secondary"></FiPhone>
+                      <FiPhone className="mr-4 text-4xl md:text-5xl text-secondary"></FiPhone>
                       <div>
-                        <span className="mb-2 font-sans text-xl font-thin tracking-widest text-fontPrimary">
+                        <span className="mb-2 font-sans text-base md:text-xl font-thin tracking-widest text-fontPrimary">
                           Telefone
                         </span>
-                        <p className="mb-2 font-sans text-base font-thin tracking-widest text-fontSecondary">
+                        <p className="mb-2 font-sans text-sm md:text-base font-thin tracking-widest text-fontSecondary">
                           (62) 9 9918-9082
                         </p>
                       </div>
