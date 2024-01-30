@@ -40,12 +40,12 @@ export default function Home() {
 
   return (
     <main>
-      <div className="overver w-screen overflow-hidden">
+      <div className=" w-full ">
         <Header />
 
         <section>
-          <div className="flex w-full items-center px-12">
-            <div className="relative mb-4 flex w-full items-center justify-between ">
+          <div className="flex w-full items-center justify-center ">
+            <div className="relative mb-4 flex w-11/12 items-center justify-between ">
               <div
                 ref={refIntro}
                 className={`${isVisibleIntro ? "animate-fade-right" : ""} mt-10 flex flex-col`}
@@ -101,7 +101,8 @@ export default function Home() {
         </section>
 
         <section>
-          <div className="flex h-630 items-center justify-center bg-tertiary">
+          <div className="w-full flex bg-tertiary items-center justify-center">
+          <div className="flex h-630 w-11/12 items-center justify-center bg-tertiary">
             <div
               ref={refQuote}
               className={`${isVisibleQuote ? "animate-fade-up" : ""} flex h-full w-screen flex-col items-center justify-center px-12 md:px-24 py-24 text-center font-normal`}
@@ -115,6 +116,7 @@ export default function Home() {
               <span className="my-6 h-0 w-14 border-4 border-secondary "></span>
               <span className="font-serif">Isaac Newton</span>
             </div>
+          </div>
           </div>
         </section>
 
@@ -445,7 +447,7 @@ export default function Home() {
         </section>
 
         <section>
-          <div className="mb-4 mt-9 flex items-center justify-center bg-tertiary py-28 ">
+          <div className="mb-4 mt-9 flex items-center justify-center bg-tertiary py-28">
             <div className="bg:flex-nowrap flex w-11/12 flex-wrap-reverse items-start justify-center">
               <div className="hidden md:block">
                 <GrayImageText

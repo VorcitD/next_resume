@@ -6,7 +6,7 @@ import SocialMediaMenu from "./SocialMediaMenu";
 
 export default function Footer(){
     return (
-      <section className="h-60 pt-10 flex flex-col items-center justify-center">
+      <section className="h-60 pt-10 flex flex-col items-center justify-center ">
         <div className="flex justify-between items-center w-11/12">
         <div className="hidden md:flex flex-col w-full h-full justify-start items-start">
         <Image src="/LogoVCBranca.png" width="180" height="79" alt={"Logo"}></Image>
