@@ -5,9 +5,7 @@ import { useRef } from "react";
 import { FiChevronsRight, FiMail, FiPhone } from "react-icons/fi";
 import Button from "./Components/Button";
 import Card from "./Components/Card";
-import Footer from "./Components/Footer";
 import GrayImageText from "./Components/GrayImageText";
-import Header from "./Components/Header";
 import Input from "./Components/Input";
 import SocialMediaMenu from "./Components/SocialMediaMenu";
 import TextArea from "./Components/TextArea";
@@ -41,8 +39,6 @@ export default function Home() {
   return (
     <main>
       <div className=" w-full ">
-        <Header />
-
         <section>
           <div className="flex w-full items-center justify-center ">
             <div className="relative mb-4 flex w-11/12 items-center justify-between ">
@@ -530,8 +526,6 @@ export default function Home() {
             </div>
           </div>
         </section>
-
-        <Footer></Footer>
       </div>
     </main>
   );
