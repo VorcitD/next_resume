@@ -1,6 +1,5 @@
-import Link from "next/link";
-import Button from "./Button";
 import Image from "next/image";
+import Link from "next/link";
 import SocialMediaMenu from "./SocialMediaMenu";
 
 
@@ -15,7 +14,7 @@ export default function Footer(){
             <nav className="text-xs md:text-sm text-fontSecondary font-thin tracking-widest fill-fontPrimary font-serif w-full flex justify-end items-center ">
                 <Link className="px-2 md:px-6 pb-2 hover:text-secondary transition duration-300 " href="">Inicio</Link>
                 <Link className="px-2 md:px-6 pb-2 hover:text-secondary transition duration-300 " href="">Sobre</Link>
-                <Link className="px-2 md:px-6 pb-2 hover:text-secondary transition duration-300 " href="">Portifolio</Link>
+                <Link className="px-2 md:px-6 pb-2 hover:text-secondary transition duration-300 " href="">Portfolio</Link>
                 <Link className="px-2 md:px-6 pb-2 hover:text-secondary transition duration-300 " href="">Blog</Link>
                 <Link className="px-2 md:px-6 pb-2 hover:text-secondary transition duration-300 " href="">Contatos</Link>
             </nav>

@@ -1,6 +1,6 @@
+import Image from "next/image";
 import Link from "next/link";
 import Button from "./Button";
-import Image from "next/image";
 
 export default function Header() {
   return (
@@ -32,7 +32,7 @@ export default function Header() {
               className="px-7 pb-2 transition duration-300 hover:border-b hover:border-secondary hover:text-secondary "
               href="https://github.com/VorcitD"
             >
-              Portifolio
+              Portfolio
             </Link>
             <Link
               className="px-7 pb-2 transition duration-300 hover:border-b hover:border-secondary hover:text-secondary "

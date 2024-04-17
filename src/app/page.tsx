@@ -80,7 +80,7 @@ export default function Home() {
                     </div>
                     <div className="max-w-60 flex items-center">
                       <Button
-                        text="VER PORTIFOLIO"
+                        text="VER PORTFOLIO"
                         href={"/Portfolio"}
                       ></Button>
                     </div>
@@ -303,7 +303,7 @@ export default function Home() {
                   <div className="mb-3 flex w-full items-center justify-start ">
                     <span className="mr-4 h-0 w-14 border-4 border-secondary "></span>
                     <span className="text-sm md:text-lg font-light tracking-widest">
-                      MEU PORTIFOLIO
+                      MEU PORTFOLIO
                     </span>
                   </div>
                   <div className="mb-12">
@@ -317,7 +317,7 @@ export default function Home() {
                     <div className=" mb-9">
                       <p className="text-sans text-sm font-light leading-8 text-fontSecondary ">
                         Conheça um pouco do meu trabalho visitando meu
-                        portifolio. Nele temos alguns dos sites que programei
+                        Portfolio. Nele temos alguns dos sites que programei
                         nas tecnologias que domino. Cada página é uma
                         oportunidade para compartilhar minha criatividade e
                         habilidades. Espero que sua visita te traga alguma
@@ -327,7 +327,7 @@ export default function Home() {
                     </div>
                     <div className="max-w-60">
                       <Button
-                        text="VER PORTIFOLIO"
+                        text="VER PORTFOLIO"
                         href={"/Portfolio"}
                       ></Button>
                     </div>
