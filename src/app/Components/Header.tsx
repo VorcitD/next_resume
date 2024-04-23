@@ -18,7 +18,7 @@ export default function Header() {
           <nav className="flex h-full items-center justify-center fill-fontPrimary font-serif text-lg font-thin tracking-widest text-fontPrimary ">
             <Link
               className="px-7 pb-2 transition duration-300 hover:border-b hover:border-secondary hover:text-secondary "
-              href="/Home"
+              href="/"
             >
               Inicio
             </Link>
@@ -36,20 +36,20 @@ export default function Header() {
             </Link>
             <Link
               className="px-7 pb-2 transition duration-300 hover:border-b hover:border-secondary hover:text-secondary "
-              href=""
+              href="https://www.tabnews.com.br/Vorcit/conteudos/1"
             >
               Blog
             </Link>
-            <Link
+            {/* <Link
               className="px-7 pb-2 transition duration-300 hover:border-b hover:border-secondary hover:text-secondary "
               href=""
             >
               Contatos
-            </Link>
+            </Link> */}
           </nav>
         </div>
         <div className="">
-          <Button text="CONTRATE" />
+          <Button href="https://wa.me//5562999189082?text=Olá Victor! Vi seu currículo e me interessei pelos seus serviços!" text="CONTRATE" />
         </div>
       </div>
     </section>

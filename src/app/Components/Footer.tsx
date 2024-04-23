@@ -12,11 +12,11 @@ export default function Footer(){
           </div>
         <div className="h-full flex flex-col justify-start items-center w-full ">
             <nav className="text-xs md:text-sm text-fontSecondary font-thin tracking-widest fill-fontPrimary font-serif w-full flex justify-end items-center ">
-                <Link className="px-2 md:px-6 pb-2 hover:text-secondary transition duration-300 " href="">Inicio</Link>
-                <Link className="px-2 md:px-6 pb-2 hover:text-secondary transition duration-300 " href="">Sobre</Link>
-                <Link className="px-2 md:px-6 pb-2 hover:text-secondary transition duration-300 " href="">Portfolio</Link>
-                <Link className="px-2 md:px-6 pb-2 hover:text-secondary transition duration-300 " href="">Blog</Link>
-                <Link className="px-2 md:px-6 pb-2 hover:text-secondary transition duration-300 " href="">Contatos</Link>
+                <Link className="px-2 md:px-6 pb-2 hover:text-secondary transition duration-300 " href="/">Inicio</Link>
+                <Link className="px-2 md:px-6 pb-2 hover:text-secondary transition duration-300 " href="https://www.linkedin.com/in/victormendozac/">Sobre</Link>
+                <Link className="px-2 md:px-6 pb-2 hover:text-secondary transition duration-300 " href="https://github.com/VorcitD">Portfolio</Link>
+                <Link className="px-2 md:px-6 pb-2 hover:text-secondary transition duration-300 " href="https://www.tabnews.com.br/Vorcit/conteudos/1">Blog</Link>
+                {/* <Link className="px-2 md:px-6 pb-2 hover:text-secondary transition duration-300 " href="">Contatos</Link> */}
             </nav>
             <div className="w-full flex items-center justify-end pt-5 pb-12 ">
             <SocialMediaMenu></SocialMediaMenu>

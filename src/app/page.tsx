@@ -2,13 +2,9 @@
 
 import Image from "next/image";
 import { useRef } from "react";
-import { FiChevronsRight, FiMail, FiPhone } from "react-icons/fi";
+import { FiChevronsRight } from "react-icons/fi";
 import Button from "./Components/Button";
-import Card from "./Components/Card";
-import GrayImageText from "./Components/GrayImageText";
-import Input from "./Components/Input";
 import SocialMediaMenu from "./Components/SocialMediaMenu";
-import TextArea from "./Components/TextArea";
 import { useIsVisible } from "./Hooks/useIsVisible";
 
 export default function Home() {
@@ -77,7 +73,7 @@ export default function Home() {
                     <div className="max-w-60 flex items-center">
                       <Button
                         text="VER PORTFOLIO"
-                        href={"/Portfolio"}
+                        href={"https://github.com/VorcitD"}
                       ></Button>
                     </div>
                   </div>
@@ -324,7 +320,7 @@ export default function Home() {
                     <div className="max-w-60">
                       <Button
                         text="VER PORTFOLIO"
-                        href={"/Portfolio"}
+                        href={"https://github.com/VorcitD"}
                       ></Button>
                     </div>
                   </div>
@@ -343,7 +339,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section>
+        {/* <section>
           <div className="mb-4 mt-9 flex items-center justify-center bg-tertiary py-28">
             <div className="flex w-11/12 flex-wrap-reverse items-center lg:flex-nowrap">
               <div className="flex h-full flex-wrap items-center justify-between md:flex-nowrap">
@@ -388,10 +384,10 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
 
         <section>
-          <div className="mb-4 mt-9 flex items-center justify-center">
+          <div className="mb-4 mt-9 flex items-center justify-center  bg-tertiary">
             <div className="flex w-11/12 flex-wrap items-center justify-around md:flex-nowrap">
               <div
                 ref={refChat}
@@ -424,7 +420,7 @@ export default function Home() {
                     <div className="max-w-96">
                       <Button
                         text="ENTRE EM CONTATO"
-                        href={"/Contact"}
+                        href={"https://wa.me//5562999189082?text=Olá Victor! Vi seu currículo e me interessei pelos seus serviços!"}
                       ></Button>
                     </div>
                   </div>
@@ -441,7 +437,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-
+{/* 
         <section>
           <div className="mb-4 mt-9 flex items-center justify-center bg-tertiary py-28">
             <div className="bg:flex-nowrap flex w-11/12 flex-wrap-reverse items-start justify-center">
@@ -525,7 +521,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
       </div>
     </main>
   );
