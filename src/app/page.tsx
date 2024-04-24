@@ -320,7 +320,7 @@ export default function Home() {
                     <div className="max-w-60">
                       <Button
                         text="VER PORTFOLIO"
-                        href={"https://github.com/VorcitD"}
+                        href={"/Portfolio"}
                       ></Button>
                     </div>
                   </div>

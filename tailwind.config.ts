@@ -1,4 +1,3 @@
-import { Cormorant } from 'next/font/google'
 import type { Config } from 'tailwindcss'
 
 const config: Config = {
@@ -17,7 +16,8 @@ const config: Config = {
         35: '.35',
       },
       height:{
-        '630':'630px'
+        '630':'630px',
+        '500':'500px'
       },
       colors:{
         primary:'#232323',
