@@ -9,18 +9,20 @@ import { useIsVisible } from "../Hooks/useIsVisible";
 export default function Home() {
   const refIntro = useRef<HTMLDivElement | null>(null);
   const isVisibleIntro = useIsVisible(refIntro);
+  const refPortfolio = useRef<HTMLDivElement | null>(null);
+  const isVisiblePortfolio = useIsVisible(refPortfolio);
 
   return (
-    <div>
+    <div className="overflow-x-hidden">
       <section>
-        <div className="flex flex-wrap-reverse w-full items-center justify-center">
-          <div className="w-full lg:w-1/2 min-w-96 justify-center lg:flex">
-            <div className="flex h-630 w-full p-12 pt-16 pb-0 ">
+        <div className="flex w-full flex-wrap-reverse items-center justify-center">
+          <div className="w-full min-w-96 justify-center lg:flex lg:w-1/2">
+            <div className="flex h-630 w-full p-12 pb-0 pt-16 ">
               {/* Esquerda */}
-              <div className="md:flex h-full hidden md:w-1/2 flex-col">
+              <div className="hidden h-full flex-col md:flex md:w-1/2">
                 <div className="relative h-1/2 w-full">
                   <Image
-                    className="hidden md:block grayscale transition duration-300 hover:grayscale-0"
+                    className="hidden grayscale transition duration-300 hover:grayscale-0 md:block"
                     fill={true}
                     src="/DragoSection.png"
                     alt=""
@@ -29,7 +31,7 @@ export default function Home() {
                 </div>
                 <div className="relative h-1/2 w-full">
                   <Image
-                    className="hidden md:block grayscale transition duration-300 hover:grayscale-0"
+                    className="hidden grayscale transition duration-300 hover:grayscale-0 md:block"
                     fill={true}
                     src="/AliancaLogin.png"
                     alt=""
@@ -49,7 +51,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className=" mb-4 flex w-full px-10  lg:w-1/2 items-center justify-center lg:justify-start ">
+          <div className=" mb-4 flex w-full items-center  justify-center px-10 lg:w-1/2 lg:justify-start">
             <div
               ref={refIntro}
               className={`${isVisibleIntro ? "animate-fade-right" : ""} mt-10 flex flex-col`}
@@ -87,6 +89,171 @@ export default function Home() {
                       text="VISITAR GITHUB"
                       href={"https://github.com/VorcitD"}
                     ></Button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* <div className=" border border-secondary border-opacity-40 mx-4 md:mx-24">
+      </div> */}
+
+      <div className="my-16 flex w-screen justify-center md:my-24">
+        <span className="border-b border-b-secondary font-serif text-4xl md:mt-8 md:text-6xl">
+          PROJETOS
+        </span>
+      </div>
+
+      <section>
+        <div className="mb-4  flex items-center justify-center pb-16">
+          <div className="flex w-11/12 flex-wrap-reverse items-center justify-around">
+            <div className="">
+              <Image
+                className="grayscale transition duration-300 hover:grayscale-0"
+                width={450}
+                height={300}
+                src={"/Example1.png"}
+                alt={""}
+              ></Image>
+            </div>
+            <div
+              ref={refPortfolio}
+              className={`${isVisiblePortfolio ? "animate-fade-right" : ""} flex max-w-xl flex-col px-4 pb-8 `}
+            >
+              <div>
+                <div className="mb-3 flex w-full items-center justify-start ">
+                  <span className="mr-4 h-0 w-14 border-4 border-secondary "></span>
+                  <span className="text-sm font-light tracking-widest md:text-lg">
+                    E-COMMERCE
+                  </span>
+                </div>
+                <div className="mb-12">
+                  <span className="font-serif text-5xl font-medium text-fontPrimary md:text-7xl">
+                    HANDMADE GI RIFFARACHI
+                  </span>
+                </div>
+              </div>
+              <div className="flex max-h-full ">
+                <div className="">
+                  <div className=" mb-9">
+                    <p className="text-sans text-sm font-light leading-8 text-fontSecondary ">
+                      Conheça um pouco do meu trabalho visitando meu Portfolio.
+                      Nele temos alguns dos sites que programei nas tecnologias
+                      que domino. Cada página é uma oportunidade para
+                      compartilhar minha criatividade e habilidades. Espero que
+                      sua visita te traga alguma inspiração para seu projeto.{" "}
+                      <br /> <br /> Sinta-se à vontade para navegar e conhecer
+                      mais sobre meu trabalho!
+                    </p>
+                  </div>
+                  <div className="max-w-60 hidden md:block">
+                    <Button text="VER PORTFOLIO" href={"/Portfolio"}></Button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div className="mb-4  flex items-center justify-center pt-16 bg-tertiary pb-16">
+          <div className="flex w-11/12 flex-wrap items-center justify-around">
+            <div
+              ref={refPortfolio}
+              className={`${isVisiblePortfolio ? "animate-fade-right" : ""} flex max-w-xl flex-col px-4 pb-8 `}
+            >
+              <div>
+                <div className="mb-3 flex w-full items-center justify-start ">
+                  <span className="mr-4 h-0 w-14 border-4 border-secondary "></span>
+                  <span className="text-sm font-light tracking-widest md:text-lg">
+                    APLICAÇÃO WEB
+                  </span>
+                </div>
+                <div className="mb-12">
+                  <span className="font-serif text-5xl font-medium text-fontPrimary md:text-7xl">
+                    REDE ALIANÇA
+                  </span>
+                </div>
+              </div>
+              <div className="flex max-h-full ">
+                <div className="">
+                  <div className=" mb-9">
+                    <p className="text-sans text-sm font-light leading-8 text-fontSecondary ">
+                      Conheça um pouco do meu trabalho visitando meu Portfolio.
+                      Nele temos alguns dos sites que programei nas tecnologias
+                      que domino. Cada página é uma oportunidade para
+                      compartilhar minha criatividade e habilidades. Espero que
+                      sua visita te traga alguma inspiração para seu projeto.{" "}
+                      <br /> <br /> Sinta-se à vontade para navegar e conhecer
+                      mais sobre meu trabalho!
+                    </p>
+                  </div>
+                  <div className="max-w-60 hidden md:block">
+                    <Button text="VER PORTFOLIO" href={"/Portfolio"}></Button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="">
+              <Image
+                className="grayscale transition duration-300 hover:grayscale-0"
+                width={850}
+                height={300}
+                src={"/AliancaDetail.png"}
+                alt={""}
+              ></Image>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div className="mb-4  flex items-center justify-center pt-16 pb-16">
+          <div className="flex w-11/12 flex-wrap-reverse items-center justify-around">
+            <div className="">
+              <Image
+                className="grayscale transition duration-300 hover:grayscale-0"
+                width={750}
+                height={300}
+                src={"/StudiumHome.png"}
+                alt={""}
+              ></Image>
+            </div>
+            <div
+              ref={refPortfolio}
+              className={`${isVisiblePortfolio ? "animate-fade-right" : ""} flex max-w-xl flex-col px-4 pb-8 `}
+            >
+              <div>
+                <div className="mb-3 flex w-full items-center justify-start ">
+                  <span className="mr-4 h-0 w-14 border-4 border-secondary "></span>
+                  <span className="text-sm font-light tracking-widest md:text-lg">
+                    APLICAÇÃO WEB
+                  </span>
+                </div>
+                <div className="mb-12">
+                  <span className="font-serif text-5xl font-medium text-fontPrimary md:text-7xl">
+                    Studium - Site de Cursos
+                  </span>
+                </div>
+              </div>
+              <div className="flex max-h-full ">
+                <div className="">
+                  <div className=" mb-9">
+                    <p className="text-sans text-sm font-light leading-8 text-fontSecondary ">
+                      Conheça um pouco do meu trabalho visitando meu Portfolio.
+                      Nele temos alguns dos sites que programei nas tecnologias
+                      que domino. Cada página é uma oportunidade para
+                      compartilhar minha criatividade e habilidades. Espero que
+                      sua visita te traga alguma inspiração para seu projeto.{" "}
+                      <br /> <br /> Sinta-se à vontade para navegar e conhecer
+                      mais sobre meu trabalho!
+                    </p>
+                  </div>
+                  <div className="max-w-60 hidden md:block">
+                    <Button text="VER PORTFOLIO" href={"/Portfolio"}></Button>
                   </div>
                 </div>
               </div>
