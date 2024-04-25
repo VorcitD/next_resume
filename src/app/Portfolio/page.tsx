@@ -14,13 +14,13 @@ export default function Home() {
     <div>
       <section>
         <div className="flex flex-wrap-reverse w-full items-center justify-center">
-          <div className="w-1/2 min-w-96 justify-center lg:flex">
+          <div className="w-full lg:w-1/2 min-w-96 justify-center lg:flex">
             <div className="flex h-630 w-full p-12 pt-16 pb-0 ">
               {/* Esquerda */}
-              <div className="flex h-full w-1/2 flex-col">
+              <div className="md:flex h-full hidden md:w-1/2 flex-col">
                 <div className="relative h-1/2 w-full">
                   <Image
-                    className=" grayscale transition duration-300 hover:grayscale-0"
+                    className="hidden md:block grayscale transition duration-300 hover:grayscale-0"
                     fill={true}
                     src="/DragoSection.png"
                     alt=""
@@ -29,7 +29,7 @@ export default function Home() {
                 </div>
                 <div className="relative h-1/2 w-full">
                   <Image
-                    className=" grayscale transition duration-300 hover:grayscale-0"
+                    className="hidden md:block grayscale transition duration-300 hover:grayscale-0"
                     fill={true}
                     src="/AliancaLogin.png"
                     alt=""
