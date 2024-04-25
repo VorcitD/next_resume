@@ -139,16 +139,15 @@ export default function Home() {
                 <div className="">
                   <div className=" mb-9">
                     <p className="text-sans text-sm font-light leading-8 text-fontSecondary ">
-                      Conheça um pouco do meu trabalho visitando meu Portfolio.
-                      Nele temos alguns dos sites que programei nas tecnologias
-                      que domino. Cada página é uma oportunidade para
-                      compartilhar minha criatividade e habilidades. Espero que
-                      sua visita te traga alguma inspiração para seu projeto.{" "}
-                      <br /> <br /> Sinta-se à vontade para navegar e conhecer
-                      mais sobre meu trabalho!
+                      Sistema de E-commerce desenvolvido em Wordpress para uma
+                      empresa de peças artesanais, cujo principal produto é
+                      crochê. O sistema foi desenvolvido em wordpress para
+                      facilitar o manuseio da proprietária em adicionar produtos
+                      e atualizar suas página.
+                      <br /> <br />
                     </p>
                   </div>
-                  <div className="max-w-60 hidden md:block">
+                  <div className="hidden max-w-60 md:block">
                     <Button text="VER PORTFOLIO" href={"/Portfolio"}></Button>
                   </div>
                 </div>
@@ -159,7 +158,7 @@ export default function Home() {
       </section>
 
       <section>
-        <div className="mb-4  flex items-center justify-center pt-16 bg-tertiary pb-16">
+        <div className="mb-4  flex items-center justify-center bg-tertiary pb-16 pt-16">
           <div className="flex w-11/12 flex-wrap items-center justify-around">
             <div
               ref={refPortfolio}
@@ -182,16 +181,16 @@ export default function Home() {
                 <div className="">
                   <div className=" mb-9">
                     <p className="text-sans text-sm font-light leading-8 text-fontSecondary ">
-                      Conheça um pouco do meu trabalho visitando meu Portfolio.
-                      Nele temos alguns dos sites que programei nas tecnologias
-                      que domino. Cada página é uma oportunidade para
-                      compartilhar minha criatividade e habilidades. Espero que
-                      sua visita te traga alguma inspiração para seu projeto.{" "}
-                      <br /> <br /> Sinta-se à vontade para navegar e conhecer
-                      mais sobre meu trabalho!
+                      Sistema de gerenciamento de cartão de todos realizado a
+                      Rede Aliança, empresa de beneficios do nordeste goiano.
+                      Projeto foi feito utilizando Next + Tailwind no frontend e
+                      uma Api Restful foi desenvoldida em NodeJS para o backend,
+                      usando banco de dados relacional. É uma aplicação web pois
+                      buscava-se um sistema descentralizado para varias filiais
+                      utilizarem.
                     </p>
                   </div>
-                  <div className="max-w-60 hidden md:block">
+                  <div className="hidden max-w-60 md:block">
                     <Button text="VER PORTFOLIO" href={"/Portfolio"}></Button>
                   </div>
                 </div>
@@ -211,7 +210,7 @@ export default function Home() {
       </section>
 
       <section>
-        <div className="mb-4  flex items-center justify-center pt-16 pb-16">
+        <div className="mb-4  flex items-center justify-center pb-16 pt-16">
           <div className="flex w-11/12 flex-wrap-reverse items-center justify-around">
             <div className="">
               <Image
@@ -243,16 +242,14 @@ export default function Home() {
                 <div className="">
                   <div className=" mb-9">
                     <p className="text-sans text-sm font-light leading-8 text-fontSecondary ">
-                      Conheça um pouco do meu trabalho visitando meu Portfolio.
-                      Nele temos alguns dos sites que programei nas tecnologias
-                      que domino. Cada página é uma oportunidade para
-                      compartilhar minha criatividade e habilidades. Espero que
-                      sua visita te traga alguma inspiração para seu projeto.{" "}
-                      <br /> <br /> Sinta-se à vontade para navegar e conhecer
-                      mais sobre meu trabalho!
+                      Plataforma de Cursos online com frontend React e backend
+                      NodeJS. Essa plataforma foi originalmente criada como
+                      objeto de estudo das tecnologias. Mas posteriormente
+                      adaptada para ser uma homepage para a ONG Janela Mágica do
+                      Vale do Aço em Minas Gerais.
                     </p>
                   </div>
-                  <div className="max-w-60 hidden md:block">
+                  <div className="hidden max-w-60 md:block">
                     <Button text="VER PORTFOLIO" href={"/Portfolio"}></Button>
                   </div>
                 </div>
