@@ -30,7 +30,7 @@ export default function Header() {
             </Link>
             <Link
               className="px-7 pb-2 transition duration-300 hover:border-b hover:border-secondary hover:text-secondary "
-              href="https://github.com/VorcitD"
+              href="/Portfolio"
             >
               Portfolio
             </Link>

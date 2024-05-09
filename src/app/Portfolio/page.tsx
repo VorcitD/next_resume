@@ -148,7 +148,7 @@ export default function Home() {
                     </p>
                   </div>
                   <div className="hidden max-w-60 md:block">
-                    <Button text="VER PORTFOLIO" href={"/Portfolio"}></Button>
+                    <Button text="VISITAR GITHUB" href={"https://github.com/VorcitD"}></Button>
                   </div>
                 </div>
               </div>
@@ -191,7 +191,7 @@ export default function Home() {
                     </p>
                   </div>
                   <div className="hidden max-w-60 md:block">
-                    <Button text="VER PORTFOLIO" href={"/Portfolio"}></Button>
+                    <Button text="VISITAR GITHUB" href={"https://github.com/VorcitD"}></Button>
                   </div>
                 </div>
               </div>
@@ -250,7 +250,7 @@ export default function Home() {
                     </p>
                   </div>
                   <div className="hidden max-w-60 md:block">
-                    <Button text="VER PORTFOLIO" href={"/Portfolio"}></Button>
+                    <Button text="VISITAR GITHUB" href={"https://github.com/VorcitD"}></Button>
                   </div>
                 </div>
               </div>
