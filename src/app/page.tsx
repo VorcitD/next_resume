@@ -45,7 +45,7 @@ export default function Home() {
                 <div className="md:ml-12">
                   <div className="mb-3 flex w-full items-center justify-start py-4">
                     <span className="mr-4 h-0 w-14 border-4 border-secondary "></span>
-                    <span className="text-sm font-light tracking-widest md:text-lg">
+                    <span className="text-sm font-light text-fontPrimary tracking-widest md:text-lg">
                       FULL-STACK WEB DEVELOPER
                     </span>
                   </div>
@@ -122,7 +122,7 @@ export default function Home() {
                 <div>
                   <div className="mb-3 flex w-full items-center justify-start ">
                     <span className="mr-4 h-0 w-14 border-4 border-secondary "></span>
-                    <span className="text-sm md:text-lg font-light tracking-widest">
+                    <span className="text-sm text-fontPrimary md:text-lg font-light tracking-widest">
                       SOBRE MIM
                     </span>
                   </div>
@@ -219,7 +219,7 @@ export default function Home() {
                 <div className="flex flex-col px-4">
                   <div className="mb-3 flex w-full items-center justify-start ">
                     <span className="mr-4 h-0 w-14 border-4 border-secondary "></span>
-                    <span className="text-sm md:text-lg font-light tracking-widest">
+                    <span className="text-sm md:text-lg font-light tracking-widest text-fontPrimary">
                       CURRÍCULO
                     </span>
                   </div>
@@ -294,7 +294,7 @@ export default function Home() {
                 <div>
                   <div className="mb-3 flex w-full items-center justify-start ">
                     <span className="mr-4 h-0 w-14 border-4 border-secondary "></span>
-                    <span className="text-sm md:text-lg font-light tracking-widest">
+                    <span className="text-sm md:text-lg font-light tracking-widest text-fontPrimary">
                       MEU PORTFOLIO
                     </span>
                   </div>
@@ -396,7 +396,7 @@ export default function Home() {
                 <div>
                   <div className="mb-3 flex w-full items-center justify-start ">
                     <span className="mr-4 h-0 w-14 border-4 border-secondary "></span>
-                    <span className="text-sm md:text-lg font-light tracking-widest">
+                    <span className="text-sm md:text-lg font-light tracking-widest text-fontPrimary">
                       FALE COMIGO
                     </span>
                   </div>

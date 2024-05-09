@@ -58,8 +58,8 @@ export default function Home() {
             >
               <div className=" md:ml-12">
                 <div className="mb-3 flex w-full items-center justify-end py-4">
-                  <span className="mr-4 h-0 w-14 border-4 border-secondary "></span>
-                  <span className="text-sm font-light tracking-widest md:text-lg">
+                  <span className="mr-4 h-0 w-14 border-4  border-secondary "></span>
+                  <span className="text-sm font-light tracking-widest md:text-lg text-fontPrimary">
                     VICTOR CAVALCANTI
                   </span>
                 </div>
@@ -101,7 +101,7 @@ export default function Home() {
       </div> */}
 
       <div className="my-16 flex w-screen justify-center md:my-24">
-        <span className="border-b border-b-secondary font-serif text-4xl md:mt-8 md:text-6xl">
+        <span className="border-b border-b-secondary font-serif text-4xl md:mt-8 md:text-6xl text-fontPrimary">
           PROJETOS
         </span>
       </div>
@@ -125,7 +125,7 @@ export default function Home() {
               <div>
                 <div className="mb-3 flex w-full items-center justify-start ">
                   <span className="mr-4 h-0 w-14 border-4 border-secondary "></span>
-                  <span className="text-sm font-light tracking-widest md:text-lg">
+                  <span className="text-sm font-light tracking-widest md:text-lg text-fontPrimary">
                     E-COMMERCE
                   </span>
                 </div>
@@ -167,7 +167,7 @@ export default function Home() {
               <div>
                 <div className="mb-3 flex w-full items-center justify-start ">
                   <span className="mr-4 h-0 w-14 border-4 border-secondary "></span>
-                  <span className="text-sm font-light tracking-widest md:text-lg">
+                  <span className="text-sm font-light tracking-widest md:text-lg text-fontPrimary">
                     APLICAÇÃO WEB
                   </span>
                 </div>
@@ -199,7 +199,7 @@ export default function Home() {
             <div className="">
               <Image
                 className="grayscale transition duration-300 hover:grayscale-0"
-                width={850}
+                width={750}
                 height={300}
                 src={"/AliancaDetail.png"}
                 alt={""}
@@ -228,7 +228,7 @@ export default function Home() {
               <div>
                 <div className="mb-3 flex w-full items-center justify-start ">
                   <span className="mr-4 h-0 w-14 border-4 border-secondary "></span>
-                  <span className="text-sm font-light tracking-widest md:text-lg">
+                  <span className="text-sm font-light tracking-widest md:text-lg text-fontPrimary">
                     APLICAÇÃO WEB
                   </span>
                 </div>
